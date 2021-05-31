@@ -87,7 +87,7 @@ class App {
     const coords = [latitude, longitude];
     this.#map = L.map('map').setView(coords, this.#mapZoom);
 
-    L.tileLayer('	https://tiles.wmflabs.org/osm-no-labels/{z}/{x}/{y}.png', {
+    L.tileLayer('	https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(this.#map);
 
